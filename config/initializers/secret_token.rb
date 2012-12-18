@@ -4,4 +4,4 @@
 # If you change this key, all old signed cookies will become invalid!
 # Make sure the secret is at least 30 characters and all random,
 # no regular words or you'll be exposed to dictionary attacks.
-Guitar::Application.config.secret_token = '2e3560ce338d774414560c845629e470eff4bf01326361de92bd6551a0269e68b0a2e479ceeb9e037c9a211c2e880243355367b4d155c932600c49f45ab3bfc9'
+Guitar::Application.config.secret_token = 'af275194f666584c2c797d4d3b6f879eb7177e0086822a3df880cdbb21fc3823740cc640ccabfc5a282b8b3b33d1f3860c273577b7ba825f9b6c08faebdac452'
