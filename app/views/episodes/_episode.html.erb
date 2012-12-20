@@ -1,0 +1,17 @@
+<div class="episode">
+  <div class="episode_snapshot">
+    <%= link_to image_tag("cover_1.png",  :alt => episode.name), episode %>
+  </div>
+
+  <div class="episode_intro">
+    <div class="episode_intro_title">
+      <%= title(episode) %>
+    </div>
+    <h2><%= link_to episode.name, episode %></h2>
+      <%= desc(episode) %>
+  </div>
+  <div class="episode_watch_batch">
+    <%= link_to t("episode.play"), episode_path(episode, :autoplay => true), :class => "btn btn-info"%>
+  </div>
+  <div class="clear"></div>
+</div>

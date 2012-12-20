@@ -14,3 +14,5 @@ user2.confirm!
 puts 'New user created: ' << user2.name
 user.add_role :admin
 
+puts "setting sample episodes"
+episode1 = Episode.create! :name => "episode1", :notes => "notes1", :published_at => "2012-12-03", :seconds => 10, :description => "description1", :comments_count => 0, :youku => "www.youku.com"

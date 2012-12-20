@@ -119,7 +119,7 @@ When /^I sign in with a wrong password$/ do
 end
 
 When /^I edit my account details$/ do
-  click_link "Edit account"
+  click_link "Edit"
   fill_in "Name", :with => "newname"
   fill_in "Current password", :with => @visitor[:password]
   click_button "Update"

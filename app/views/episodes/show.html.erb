@@ -1,0 +1,46 @@
+<div id="episode">
+  <% if params[:autoplay] %>
+    <%= render "player" %>
+    <h1> <span id="episode_no">#<%= @episode.id %></span> <%= @episode.name %></h1>
+  <% else %>
+    <%= link_to image_tag("http://media.happycasts.net/assets/episodes/stills/#{@episode.asset_name}.png", :class => "episode_snapshot",  :alt => @episode.name), episode_path(@episode, :autoplay => true) %>
+    <div class="episode_intro">
+      <div class="episode_intro_title">
+        <%= @episode.id %>期
+        <%= render_episode_publish_time(@episode)%>
+      </div>
+      <h2><%= @episode.name %></h2>
+      <%= @episode.description %>
+    </div>
+    <div class="episode_watch_btn">
+      <%= link_to t("play"), episode_path(@episode, :autoplay => true), :class => "btn btn-info"%>
+    </div>
+  <% end %>
+  <div class="alternatives">
+    <ul>
+      <li><%= link_to t("youku"), @episode.youku, :class => "btn" %></li>
+  </ul>
+  </div>
+</div>
+
+<% content_for :scripts do %>
+  <%= javascript_include_tag "episodes" %>
+  <script>
+  !function ($) {
+    $("#jquery_jplayer_1").jPlayer({
+      ready: function () {
+        $(this).jPlayer("setMedia", {
+          m4v: "http://media.happycasts.net/assets/episodes/videos/048-rsync.mov",
+          poster: "http://media.happycasts.net/assets/episodes/stills/load.png"
+        }).jPlayer('play');
+      },
+      swfPath: "/assets/",
+      supplied: "m4v",
+      size: {
+        width: "960px",
+        height: "720px",
+      }
+    });
+  }(window.jQuery)
+  </script>
+<% end %>

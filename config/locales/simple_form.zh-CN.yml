@@ -1,14 +1,14 @@
-en:
+zh-CN:
   simple_form:
-    "yes": 'Yes'
-    "no": 'No'
-    login: "Login"
-    logout: "Logout"
-    sign_up: "Sign up"
-    edit: "Edit"
-    admin: "Admin"
+    "yes": '是'
+    "no": '否'
+    login: "登录"
+    logout: "退出"
+    sign_up: "注册"
+    edit: "编辑"
+    admin: "管理"
     required:
-      text: 'required'
+      text: '必需的'
       mark: '*'
       # You can uncomment the line below if you need to overwrite the whole required html.
       # When using html, text and mark won't be used.

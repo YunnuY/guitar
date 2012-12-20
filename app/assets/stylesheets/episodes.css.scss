@@ -1,0 +1,66 @@
+/*** EPISODES ***/
+$peter-gray: #ececec;
+
+.episode {
+  margin-bottom: 25px;
+  padding-bottom: 19px;
+  .episode_snapshot {
+    float: left;
+  }
+  img {
+    border: solid 1px #BBB;
+  }
+  .episode_intro {
+    padding-left: 210px;
+    .episode_intro_title {
+      color: darken($peter-gray, 50%);
+      font-size: 80%;
+    }
+    h2 {
+      margin-bottom: 6px;
+    }
+  }
+  .episode_watch_btn {
+    padding-top: 5px;
+    padding-left: 210px;
+  }
+  border-bottom: solid 1px hsl(0, 0%, 90%);
+  .clear {
+    clear: both;
+  }
+}
+#episode {
+  margin-bottom: 50px;
+  .episode_snapshot {
+    float: left;
+    border: solid 1px #BBB;
+  }
+  .episode_intro {
+    padding-left: 210px;
+    .episode_intro_title {
+      color: darken($peter-gray, 50%);
+      font-size: 80%;
+    }
+  }
+  .episode_watch_btn {
+    padding-top: 5px;
+    padding-left: 210px;
+  }
+  span#episode_no {
+    color: darken($peter-gray, 30%);
+  }
+  .alternatives {
+    float: right;
+    ul {
+      list-style: none;
+      li {
+        float: left;
+        padding-left: 20px;
+      }
+    }
+  }
+  #video_wrapper {
+    border: solid 1px #777;
+    margin-bottom: 14px;
+  }
+}
