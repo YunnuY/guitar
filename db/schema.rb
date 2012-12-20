@@ -11,7 +11,19 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121218165956) do
+ActiveRecord::Schema.define(:version => 20121220122643) do
+
+  create_table "episodes", :force => true do |t|
+    t.string   "name"
+    t.text     "notes"
+    t.datetime "published_at"
+    t.integer  "seconds"
+    t.text     "description"
+    t.integer  "comments_count", :default => 0
+    t.string   "youku"
+    t.datetime "created_at",                    :null => false
+    t.datetime "updated_at",                    :null => false
+  end
 
   create_table "roles", :force => true do |t|
     t.string   "name"

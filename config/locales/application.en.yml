@@ -1,0 +1,25 @@
+"en":
+  application:
+    nav:
+      brand: "Lovin Guitar"
+      home: "home"
+      video: "video"
+      tablar: "tablar"
+      artist: "artist"
+      tool: "tool"
+      bbs: "bbs"
+      face_to_face: "face to face"
+      face_face: 
+        by_map: "find by map"
+        teachers: "certificated teacher"
+  episode:
+    intro:
+      title: "episode #%{id}  %{published_at} - %{count}comments"
+      desc: "%{desc} (%{duration}minutes)"
+    play: "play"
+  date:
+    order:
+    - :year
+    - :month
+    - :day
+

@@ -1,3 +1,42 @@
 @import "bootstrap";
 body { padding-top: 60px; }
 @import "bootstrap-responsive";
+
+
+$navbarHeight: 80px;
+.navbar { 
+  height: $navbarHeight; 
+
+  .brand {
+    text-align: center;
+    .brand_logo {
+      width: 160px;
+      height: 38px;
+    }
+    .brand_text {
+      font-size: 120%;
+      margin-top: 4px;
+      a:hover { text-decoration: none; }
+    }
+  }
+  .nav {
+    margin-top: 40px;
+    font-size: 160%;
+  }
+  .manage {
+    float: right;
+    font-size: 100%;
+    list-style: none;
+    margin: 0px;
+    li {
+      float: left;
+      margin: 5px;
+    }
+  }
+}
+
+.dropdown {
+  li {
+    font-size: 70%;
+  }
+}

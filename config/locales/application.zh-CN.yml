@@ -1,0 +1,25 @@
+"zh-CN":
+  application:
+    nav:
+      brand: "我爱吉他网"
+      home: "主页"
+      video: "视频"
+      tablar: "曲谱"
+      artist: "艺术家"
+      tool: "工具软件"
+      bbs: "论坛"
+      face_to_face: "面对面教学"
+      face_face: 
+        by_map: "按地图查找"
+        teachers: "认证教师"
+  episode:
+    intro:
+      title: "%{id}期  发布时间%{published_at} - %{count}评论"
+      desc: "%{desc} (%{duration}分钟)"
+    play: "播放"
+  date:
+    order:
+    - :year
+    - :month
+    - :day
+
