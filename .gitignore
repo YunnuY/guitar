@@ -20,7 +20,8 @@ db/*.sqlite3
 /log/*
 /tmp/*
 /public/*
-
+*.jpeg
+*.jpg
 # various artifacts
 **.war
 *.rbc

@@ -38,6 +38,12 @@ $('document').ready(function() {
     return false;
   });
   
+  $('.dropdown-toggle').dropdown();
+
+  $('.flexslider').flexslider({
+    animation: "slide"
+  });
+
 })
 
 // load social sharing scripts if the page includes a Twitter "share" button

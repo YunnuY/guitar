@@ -1,6 +1,9 @@
 Guitar::Application.routes.draw do
   resources :episodes
 
+
+  root :to => 'home#welcome'
+
   authenticated :user do
     root :to => 'home#index'
   end

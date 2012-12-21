@@ -1,13 +1,13 @@
 @import "bootstrap";
-body { padding-top: 60px; }
 @import "bootstrap-responsive";
 
-
 $navbarHeight: 80px;
+
 .navbar { 
   height: $navbarHeight; 
-
+  background:#eee image-url('bg.png') bottom left repeat;
   .brand {
+    margin-left: 40px;
     text-align: center;
     .brand_logo {
       width: 160px;
@@ -27,7 +27,7 @@ $navbarHeight: 80px;
     float: right;
     font-size: 100%;
     list-style: none;
-    margin: 0px;
+    margin-right: 20px;
     li {
       float: left;
       margin: 5px;
