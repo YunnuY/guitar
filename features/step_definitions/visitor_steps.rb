@@ -13,12 +13,20 @@ When /^I visit the home page$/ do
     visit root_path
 end
 
+When /^I visit the sign up page$/ do
+    visit new_user_registration_path
+end
+
 Then /^I should see a button "([^\"]*)"$/ do |arg1|
   page.should have_button (arg1)
 end
 
 When /^I click a button "([^"]*)"$/ do |arg1|
   click_button (arg1)
+end
+
+Then /^I should see a link "([^\"]*)"$/ do |arg1|
+  page.should have_link (arg1)
 end
 
 Then /^I should see a form with a field "([^"]*)"$/ do |arg1|

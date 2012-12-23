@@ -2,10 +2,10 @@ Guitar::Application.routes.draw do
   resources :episodes
 
 
-  root :to => 'home#welcome'
+  root :to => 'home#index'
 
   authenticated :user do
-    root :to => 'home#index'
+    root :to => 'home#welcome'
   end
   devise_scope :user do
     root :to => "devise/registrations#new"
