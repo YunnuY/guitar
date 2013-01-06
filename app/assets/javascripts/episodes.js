@@ -5,6 +5,7 @@ $("#show_note_btn").click(function() {
   $('.show_notes').show();
   return false
 });
+
 $("#show_comment_btn").click(function() {
   $("#show_note_btn").removeClass("active");
   $("#show_comment_btn").addClass("active");
@@ -14,8 +15,7 @@ $("#show_comment_btn").click(function() {
 });
 
 $("#comment_btn").click(function() {
-  if ($.trim($('#new_comment textarea').val()) == "") 
-  {
+  if ($.trim($('#new_comment textarea').val()) == "") {
       $('#new_comment .error').show();
       return false
   }
@@ -26,12 +26,9 @@ $('#markdown_cheatsheet').modal({
 })
 
 $('#jquery_jplayer_1').bind('click', function(e) {
-  if ($('.jp-play').is(':visible')) 
-  {
+  if ($('.jp-play').is(':visible')) {
     return $(this).jPlayer('play');
-  } 
-  else 
-  {
+  } else {
     return $(this).jPlayer('pause');
   }
 });

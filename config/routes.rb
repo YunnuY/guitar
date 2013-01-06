@@ -1,6 +1,6 @@
 Guitar::Application.routes.draw do
   resources :episodes
-
+  resources :comments
 
   root :to => 'home#index'
 

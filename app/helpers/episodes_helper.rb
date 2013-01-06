@@ -5,4 +5,7 @@ module EpisodesHelper
   def desc(episode)
     t "episode.intro.desc" , :desc => episode.description, :duration => (episode.seconds/60).round
   end
+  def video_url(ep)
+    "http://media.happycasts.net/assets/episodes/videos/#{ep.asset_name}.mov"
+  end
 end

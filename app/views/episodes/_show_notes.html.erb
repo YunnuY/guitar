@@ -2,6 +2,6 @@
   <% if can? :edit, @episode %>
     <%= link_to "Edit", edit_episode_path(@episode), :class => "btn edit_shownotes_btn" %>
   <% end %>
-  <%= textilize @episode.notes %>
+  <%=  textilize @episode.notes %>
 </div>
 

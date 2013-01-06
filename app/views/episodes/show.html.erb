@@ -1,27 +1,51 @@
 <div id="episode">
   <% if params[:autoplay] %>
     <%= render "player" %>
-    <h1> <span id="episode_no">#<%= @episode.id %></span> <%= @episode.name %></h1>
   <% else %>
-    <%= link_to image_tag("http://media.happycasts.net/assets/episodes/stills/#{@episode.asset_name}.png", :class => "episode_snapshot",  :alt => @episode.name), episode_path(@episode, :autoplay => true) %>
-    <div class="episode_intro">
-      <div class="episode_intro_title">
-        <%= @episode.id %>期
-        <%= render_episode_publish_time(@episode)%>
-      </div>
-      <h2><%= @episode.name %></h2>
-      <%= @episode.description %>
-    </div>
-    <div class="episode_watch_btn">
-      <%= link_to t("play"), episode_path(@episode, :autoplay => true), :class => "btn btn-info"%>
-    </div>
+    <%= render @episode %>
   <% end %>
-  <div class="alternatives">
-    <ul>
-      <li><%= link_to t("youku"), @episode.youku, :class => "btn" %></li>
-  </ul>
-  </div>
 </div>
+
+<ul class="nav nav-tabs">
+  <li id="show_note_btn" class="active">
+    <%= link_to "notes" %>
+  </li>
+  <li id="show_comment_btn">
+    <%= link_to "#{@episode.comments.size.to_s} comments" %>
+  </li>
+</ul>
+<%= render "show_notes" %>
+
+<div class="comment_view">
+  <div class="comments">
+    <%= render :partial => "comments/editable_comment", :collection => @episode.comments %>
+  </div>
+
+  <% if current_user %>
+  <div class="nice_comment">
+    <%= form_for(Comment.new(:episode_id => @episode.id, :user_id => current_user.id), :remote => true) do |f| %>
+      <%= f.hidden_field :episode_id %>
+      <%= f.hidden_field :user_id  %>
+      <%= f.label t("add_comment") %>
+      <a  class="formatting_tips" data-toggle="modal" href="#markdown_cheatsheet" ><%= t("formatting") %></a>
+      <div class="error">
+        <%= t("comment_empty_error") %>
+      </div>
+      <%= f.text_area :content %>
+      <%= f.submit t("publish_comment"), :class=>"btn btn-success", :id => "comment_btn" %>
+    <% end %>
+  </div>
+  <% else %>
+    <div id="login_buttons">
+      <%= link_to t("login_and_comment"), new_user_session_path(:return_to => request.url) ,:class => "btn btn-danger" %>
+      <%= t ("or") %>
+      <%= link_to t("signup_for_free"), new_user_registration_path(:return_to => request.url) ,:class => "btn btn-success" %>
+    </div>
+    <br \>
+  <% end %>
+</div>
+
+<%= render "comments/markdown_cheatsheet" %>
 
 <% content_for :scripts do %>
   <%= javascript_include_tag "episodes" %>

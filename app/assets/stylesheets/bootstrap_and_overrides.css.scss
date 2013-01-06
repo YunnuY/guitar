@@ -2,7 +2,8 @@
 @import "bootstrap-responsive";
 
 $navbarHeight: 80px;
-$navbarTextColor: green; 
+$headingsColor: $green;
+$navbarTextColor: $green; 
 
 .navbar { 
   height: $navbarHeight; 
