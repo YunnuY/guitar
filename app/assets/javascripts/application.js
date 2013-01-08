@@ -16,6 +16,10 @@
 //= require dataTables/jquery.dataTables
 //= require dataTables/jquery.dataTables.bootstrap
 //= require_tree .
+//= require jquery.flexslider
+//= require jquery.jplayer.min
+
+
 $('document').ready(function() {
   
   // use AJAX to submit the "request invitation" form
