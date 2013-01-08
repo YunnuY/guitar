@@ -1,12 +1,8 @@
 @import "bootstrap";
 @import "bootstrap-responsive";
 
-$navbarHeight: 80px;
-$headingsColor: $green;
-$navbarTextColor: $green; 
-
 .navbar { 
-  height: $navbarHeight; 
+  height: 80px; 
   background:#eee image-url('bg.png') bottom left repeat;
   .brand {
     margin-left: 40px;
