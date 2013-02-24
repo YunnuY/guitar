@@ -1,5 +1,11 @@
-Guitar
-========================
+#Guitar
+##install guide
+   - git clone, get the source code
+   - bundle install, install the gems based on dependence.
+   - sudo apt-get install node and nodejs, install javascript runtime
+   - rake db:setup, create database and tables
+   - rails start, you should be able to see the site.
+
 
 This application was generated with the rails_apps_composer gem:
 https://github.com/RailsApps/rails_apps_composer
