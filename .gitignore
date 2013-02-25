@@ -16,12 +16,9 @@
 /vendor/ruby/
 
 # minimal Rails specific artifacts
-db/*.sqlite3
 /log/*
 /tmp/*
 /public/*
-*.jpeg
-*.jpg
 # various artifacts
 **.war
 *.rbc
