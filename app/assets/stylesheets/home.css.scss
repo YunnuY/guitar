@@ -1,3 +1,89 @@
-// Place all the styles related to the home controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+/*** main style ***/
+#main{
+	 margin-left:100px;
+	 .row{
+	 	margin-left: 0px;
+	 	.span12{
+	 		width: 1000px;
+	 		.thumbnails{
+				padding-left: 0px;	 			
+	 		}
+	 	}
+	 }
+}
+
+/*** footer style ***/
+.footer{
+	padding-top: 10px;
+	background: url(/assets/foot-bg.png);
+	.copyright{
+		color: #0088cc;
+		padding-bottom: 10px;
+	}
+}
+
+/*** promobox style ***/
+::selection {
+    background: #d2f092;
+    color: #fff;
+    text-shadow: none;
+}
+
+.promobox {
+	height: 80px;
+	width: 1000px;
+	padding-left: 149px;
+	position: absolute;
+	left: 0;
+	bottom: 200px;
+	background: url(/assets/slide_text_bar_bg.png) repeat-x;
+	h1 {
+		position: absolute;
+		font-size: 28px;
+		margin-top: 24px;
+		margin-left: 24px;
+		color: #FFF;
+		text-shadow: black 1px 1px 2px;
+		text-shadow: rgba(0,0,0,0.7) 1px 2px 4px;
+	}
+	h2 {
+		display: none;
+	}
+	a{
+	    height: 20px;
+	    padding-left: 22px;
+	    background: url(/assets/sprite.png) no-repeat;
+	}
+}
+
+
+.button {
+	color: #FFF;
+	float: right;
+	margin-top: 10px;
+	margin-right: 24px;
+	position: relative;
+	a.register{
+		display: block;
+		width: 210px;
+		height: 60px;
+		text-indent: -9999px;
+		background: url(/assets/sprite.png) no-repeat 0 -510px;
+	}
+	.openlogin {
+		position: absolute;
+		top: 36px;
+		left: 35px;
+		a {
+			text-indent: 0;
+			color: #D9D9D9;
+			padding-left: 22px;
+		}
+		.qq {
+    		background-position: -225px -455px!important;
+		}
+		.sina {
+    		background-position: -225px -478px!important;
+		}
+	}
+}

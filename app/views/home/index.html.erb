@@ -1,11 +1,18 @@
-<div class="row">
-  <div class="span12">
-    <div class="flexslider">
-      <ul class="slides">
-        <li> <%= image_tag "s1.jpg"%> </li>
-        <li> <%= image_tag "s2.jpg"%> </li>
-        <li> <%= image_tag "s3.jpg"%> </li>
-      </ul>
+<div class="flexslider">
+  <ul class="slides">
+    <li> <%= image_tag "s8.jpg"%> </li>
+    <li> <%= image_tag "s10.jpg"%> </li>
+    <li> <%= image_tag "s6.jpg"%> </li>
+  </ul>
+</div>
+<div class="promobox png">
+  <h2>记录生活点滴，分享多彩心情</h2>
+  <h1>记录生活点滴，分享多彩心情</h1>
+  <div class="button ">
+    <a class="register png" href="/users/sign_up">立即注册</a>
+    <div class="openlogin">
+      <a href="/users/sign_in" onclick="javascript:sinaweiboLogin();" class="sina png" title="用新浪微博帐号登录">微博登录</a>
+      <a href="/users/sign_in" onclick="javascript:qzoneLogin();" class="qq png" title="用QQ帐号登录">QQ登录</a>
     </div>
   </div>
 </div>
@@ -15,62 +22,60 @@
     <div class="span4">
       <%= image_tag "guitar.png", :class => "marketing-img" %>
       <%= image_tag "Music.png", :class => "marketing-img" %>
-      <h2>为你我而生</h2>
-      <p>是音乐迷，更是吉他爱好者，不是大明星，也爱背上吉他闯天涯。音符背后的苦与乐，你知我知吉他知。推广吉他文化。</p>
+      <h2 style="margin-top:12px;">为你而生</h2>
+      <p>是音乐迷，更是吉他爱好者，不是大明星，但爱背上吉他闯天涯。音符背后的苦与乐，你知我知吉他知。旨在推广吉他文化。</p>
     </div>
     <div class="span4">
       <%= image_tag "guitar1.png", :class => "marketing-img" %>
       <%= image_tag "music_alt.png", :class => "marketing-img" %>
       <h2>学习、乐趣</h2>
-      <p>夜深人静，抱起吉他赶走寂寞。亲友相聚，美妙琴声勾起共同的回忆。旋律跳动，节奏跟上，当音乐响起所有的付出都值得。</p>
+      <p>夜深人静，抱起吉他赶走寂寞。亲友相聚，美妙琴声勾起共同的回忆。旋律跳动，节奏跟上，悠扬的旋律让所有的付出都立刻变得很有意义。</p>
     </div>
     <div class="span4">
       <%= image_tag "facebook128.png", :class => "marketing-img" %>
       <%= image_tag "twitter.png", :class => "marketing-img" %>
       <h2>分享、交友</h2>
-      <p>将你的心得和作品在这里分享，通过新浪、腾讯、豆瓣等微博和SNS网站告诉朋友们，通过共同的爱好交到更多的朋友</p>
+      <p>将您的心得和作品分享在这里，通过新浪、腾讯、豆瓣等微博和SNS网站告诉您的朋友，共同的爱好将会成为您结交新朋友的最佳纽带。</p>
     </div>
   </div>
 </div>
 
-<hr class="soften">
+<!-- <hr class="soften"> -->
 
 <div class="row-fluid">
   <div class="span12"><h1>hot online resource</h1> </div>
   <ul class="thumbnails">
     <li class="span4">
       <div class="thumbnail">
-        <embed src="http://player.youku.com/player.php/sid/XMTAwNzgwMzA4/v.swf" allowFullScreen="true" 
-        quality="high" width="300" height="250" align="middle" allowScriptAccess="always" type="application/x-shockwave-flash"></embed>
+        <embed src="http://player.youku.com/player.php/sid/XMTAwNzgwMzA4/v.swf" allowFullScreen="true" quality="high" width="306" height="260" align="middle" allowScriptAccess="always" type="application/x-shockwave-flash"></embed>
         <div class="caption">
-          <h3>Thumbnail label</h3>
-          <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. 
-             Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-          <p><a href="#" class="btn btn-primary">Action</a> <a href="#" class="btn">Action</a></p>
+          <h3>坚强的理由 --大冲</h3>
+          <p>总播放数:2,537,829</p>
+          <p>视频信息: 吉他弹唱《坚强的理由》, 来自一位流浪歌手, 很有感觉!</p>
+          <a href="/episodes" class="btn btn-primary">喜欢？查看更多</a>
         </div>
       </div>
     </li>
     <li class="span4">
       <div class="thumbnail">
-        <img data-src="holder.js/300x250" alt="">
+        <embed src="http://player.youku.com/player.php/sid/XNDI3OTkyMTI4/v.swf" allowFullScreen="true" quality="high" width="306" height="260" align="middle" allowScriptAccess="always" type="application/x-shockwave-flash"></embed>
         <div class="caption">
-          <h3>Thumbnail label</h3>
-          <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. 
-             Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-          <p><a href="#" class="btn btn-primary">Action</a> <a href="#" class="btn">Action</a></p>
+          <h3>江南Style --PSY 朴载相</h3>
+          <p>总播放数:10,739,557</p>
+          <p>视频信息：2012年全球最为火爆的神曲，从韩国席卷亚洲，乃至整个世界!</p>
+          <a href="/episodes" class="btn btn-primary">喜欢？查看更多</a>
         </div>
       </div>
     </li>
     <li class="span4">
       <div class="thumbnail">
-        <embed src="http://player.youku.com/player.php/sid/XMjIyMjM4Mzc2/v.swf" allowFullScreen="true" 
-          quality="high" width="300" height="250" align="middle" allowScriptAccess="always" 
+        <embed src="http://player.youku.com/player.php/sid/XMjIyMjM4Mzc2/v.swf" allowFullScreen="true" quality="high" width="306" height="260" align="middle" allowScriptAccess="always" 
           type="application/x-shockwave-flash">
         <div class="caption">
-          <h3>Thumbnail label</h3>
-          <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. 
-             Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-          <p><a href="#" class="btn btn-primary">Action</a> <a href="#" class="btn">Action</a></p>
+          <h3>做我老婆好不好 --徐誉滕</h3>
+          <p>总播放数:456,020</p>
+          <p>视频信息：要表白或是求婚? 想唱首歌给她? 这首歌会是一个不错的选择！</p>
+          <a href="/episodes" class="btn btn-primary">喜欢？查看更多</a>
         </div>
       </div>
     </li>

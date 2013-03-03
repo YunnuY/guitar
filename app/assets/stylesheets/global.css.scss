@@ -98,24 +98,29 @@ html, body{
 }
 
 a {
-  color: #1B97F2;
+  
   text-decoration: none;
-  img { border: none; }
   &:hover { text-decoration: underline; }
 }
 
 h1 {
   font-size: 24px;
+  color: rgb(44, 182, 82);
 }
 
 h2 {
   font-size: 18px;
   margin-top: 3px;
   margin-bottom: 4px;
+  color: green;
+}
+p {
+  color: #0997bb;
 }
 
 h3 {
   font-size: 14px;
+  color: #f33187;
 }
 
 h4 {
