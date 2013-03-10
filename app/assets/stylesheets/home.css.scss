@@ -28,14 +28,20 @@
     color: #fff;
     text-shadow: none;
 }
-
+.slider_wrap {
+    width: 980px;
+    height: 360px;
+    overflow: hidden;
+    position: relative;
+    background: transparent;
+    margin-top: 5px;
+}
 .promobox {
 	height: 80px;
-	width: 1000px;
-	padding-left: 149px;
+	width: 980px;
 	position: absolute;
 	left: 0;
-	bottom: 200px;
+	bottom: 20px;
 	background: url(/assets/slide_text_bar_bg.png) repeat-x;
 	h1 {
 		position: absolute;
