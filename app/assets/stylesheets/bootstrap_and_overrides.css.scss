@@ -1,6 +1,7 @@
 @import "bootstrap";
 @import "bootstrap-responsive";
 
+$main-color: #79b32b;
 
 .navbar { 
   height: 80px; 
@@ -17,7 +18,7 @@
       margin-top: 4px;
       a
       { 
-        color: #79b32b;
+        color: $main-color;
         &:hover {text-decoration: none;}
       }
     }
@@ -35,9 +36,14 @@
     }
     li{
         a{
-            color: #79b32b;      
+            color: $main-color;      
          }
+    }
+    .dropdown {
+    li{
+        font-size: 70%;
       }
+    }
   }
   
   .manage {
@@ -51,14 +57,10 @@
       float: left;
       margin: 5px;
       a{
-        color: #79b32b;
+        color: $main-color;
       }
     }
   }
 }
 
-.dropdown {
-  li {
-    font-size: 70%;
-  }
-}
+
