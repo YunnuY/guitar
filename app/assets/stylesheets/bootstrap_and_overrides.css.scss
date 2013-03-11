@@ -1,11 +1,12 @@
 @import "bootstrap";
 @import "bootstrap-responsive";
 
+
 .navbar { 
   height: 80px; 
-  background:#eee image-url('bg.png') bottom left repeat;
+  // background:#eee image-url('bg.png') bottom left repeat;
   .brand {
-    margin-left: 40px;
+    margin-left: 140px;
     text-align: center;
     .brand_logo {
       width: 160px;
@@ -16,32 +17,42 @@
       margin-top: 4px;
       a
       { 
-        color: green;
+        color: #79b32b;
         &:hover {text-decoration: none;}
       }
     }
   }
   .nav {
-    margin-top: 20px;
+    margin-top: 30px;
     font-size: 180%;
     font-weight: bold;
+    li.current{
+      border-bottom: 2px solid #ff7504;
+    }
+    li.current a {
+    color: #ff7504;
+    font-weight: bold;
+    }
     li{
         a{
-            color: green;      
+            color: #79b32b;      
          }
       }
   }
+  
   .manage {
     float: right;
     font-size: 100%;
     list-style: none;
-    margin-right: 45px;
-    margin-top: 25px;
+    margin-right: 75px;
+    margin-top: 8px;
     font-weight: bold;
     li {
       float: left;
       margin: 5px;
-      color: green;
+      a{
+        color: #79b32b;
+      }
     }
   }
 }
