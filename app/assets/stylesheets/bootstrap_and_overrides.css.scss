@@ -36,9 +36,13 @@ $main-color: #79b32b;
     font-weight: bold;
     }
     li{
+        // .current{
+        //   border-bottom: 2px solid #ff7504;
+        // }
         a{
             color: $main-color;      
-         }
+            &:hover{color: $main-color; text-decoration:underline;}
+        }
     }
     .dropdown {
     li{
