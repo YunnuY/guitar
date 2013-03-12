@@ -13,27 +13,6 @@ class User < ActiveRecord::Base
 
   has_many :comments
 
-  # override Devise method
-  # no password is required when the account is created; validate password when the user sets one
-  validates_confirmation_of :password
-  def password_required?
-    if !persisted? 
-      !(password != "")
-    else
-      !password.nil? || !password_confirmation.nil?
-    end
-  end
-  
-  # override Devise method
-  def confirmation_required?
-    false
-  end
-  
-  # override Devise method
-  def active_for_authentication?
-    confirmed? || confirmation_period_valid?
-  end
-  
   # new function to set the password
   def attempt_set_password(params)
     p = {}
