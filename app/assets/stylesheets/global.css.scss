@@ -106,14 +106,14 @@ a {
 
 h1 {
   font-size: 24px;
-  color: green;
+  color: $main-color;
 }
 
 h2 {
   font-size: 18px;
   margin-top: 3px;
   margin-bottom: 4px;
-  color: green;
+  color: $main-color;
 }
 p {
   color: #000000;
@@ -121,7 +121,7 @@ p {
 
 h3 {
   font-size: 14px;
-  color: green;
+  color: $main-color;
 }
 
 h4 {

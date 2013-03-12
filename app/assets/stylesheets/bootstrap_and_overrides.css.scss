@@ -9,9 +9,10 @@ $main-color: #79b32b;
   .brand {
     margin-left: 140px;
     text-align: center;
+    padding: 0px 0px 0px;
     .brand_logo {
-      width: 160px;
-      height: 38px;
+      width: 145px;
+      height: 122px; //if lovin guitar here, height should be 38px
     }
     .brand_text {
       font-size: 120%;
@@ -24,8 +25,8 @@ $main-color: #79b32b;
     }
   }
   .nav {
-    margin-top: 30px;
-    font-size: 180%;
+    margin-top: 40px;
+    font-size: 200%;
     font-weight: bold;
     li.current{
       border-bottom: 2px solid #ff7504;
@@ -51,8 +52,9 @@ $main-color: #79b32b;
     font-size: 100%;
     list-style: none;
     margin-right: 75px;
-    margin-top: 8px;
+    margin-top: 12px;
     font-weight: bold;
+    padding-left: 10px;
     li {
       float: left;
       margin: 5px;
