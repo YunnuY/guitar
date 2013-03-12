@@ -15,16 +15,20 @@
 /*** footer style ***/
 .footer{
 	padding-top: 10px;
-	background: url(/assets/foot-bg.png);
+	p{
+		a{
+			color: $main-color;
+		}
+	}
 	.copyright{
-		color: #000000;
+		color: $main-color;
 		padding-bottom: 10px;
 	}
 }
 
 /*** promobox style ***/
 ::selection {
-    background: #d2f092;
+    background: #ff7504;
     color: #fff;
     text-shadow: none;
 }
