@@ -4,7 +4,7 @@
 $main-color: #79b32b;
 $orange-color: #ff7504;
 .navbar { 
-  height: 80px; 
+  height: 120px; 
   .brand {
     margin-left: 140px;
     text-align: center;
@@ -24,8 +24,9 @@ $orange-color: #ff7504;
     }
   }
   .nav {
-    margin-top: 40px;
-    font-size: 200%;
+    margin-left: 600px;
+    margin-top: 10px;
+    font-size: 130%;
     font-weight: bold;
     li{
         a{
