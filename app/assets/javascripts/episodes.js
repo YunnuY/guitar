@@ -32,3 +32,4 @@ $('#jquery_jplayer_1').bind('click', function(e) {
     return $(this).jPlayer('pause');
   }
 });
+
