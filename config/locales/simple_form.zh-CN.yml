@@ -7,6 +7,7 @@ zh-CN:
     sign_up: "注册"
     edit: "编辑"
     admin: "管理"
+    submit: "提交"
     required:
       text: '必需的'
       mark: '*'
@@ -14,18 +15,29 @@ zh-CN:
       # When using html, text and mark won't be used.
       # html: '<abbr title="required">*</abbr>'
     error_notification:
-      default_message: "Please review the problems below:"
+      default_message: "请检查下面的错误信息"
     # Labels and hints examples
-    # labels:
-    #   defaults:
-    #     password: 'Password'
-    #   user:
-    #     new:
-    #       email: 'E-mail to sign in.'
-    #     edit:
-    #       email: 'E-mail.'
-    # hints:
-    #   defaults:
-    #     username: 'User name to sign in.'
-    #     password: 'No special characters, please.'
-
+    labels:
+      defaults:
+        password: '密码'
+      user:
+        new:
+          email: '邮箱'
+          name: '姓名'
+          password: '密码'
+          password_confirmation: '确认密码' 
+        edit:
+          email: '邮箱'
+          name: '姓名'
+          password: '密码'
+          password_confirmation: '确认密码' 
+  # hints:
+  #   defaults:
+  #     username: 'User name to sign in.'
+  #     password: 'No special characters, please.'
+  activerecord:
+    models:
+      user: '用户'
+    attributes:
+      user:
+        name: '名字'

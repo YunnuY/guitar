@@ -1,6 +1,6 @@
 <div class="brand">
   <a href="/"><%= image_tag "Guitar1.png", :class => "brand_logo" %></a>
-<!--   <div class="brand_text">
+  <!--   <div class="brand_text">
     <%= link_to t("application.nav.brand"), "/" %>
   </div> -->
 </div>
@@ -13,18 +13,19 @@
   <li><a href="#"><%= t "application.nav.tool" %></a></li>
   <li><a href="#"><%= t "application.nav.bbs" %></a></li>
   <li class="dropdown">
-    <a href="#" class="dropdown-toggle" data-toggle="dropdown"> 
-      <%= t "application.nav.face_to_face" %><b class="caret"></b>
-    </a>
-    <ul class="dropdown-menu">
-      <li><a href="#"><%= t "application.nav.face_face.teachers" %></a></li>
-      <li><a href="#"><%= t "application.nav.face_face.by_map" %></a></li>
-    </ul>
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown"> 
+    <%= t "application.nav.face_to_face" %><b class="caret"></b>
+  </a>
+  <ul class="dropdown-menu">
+    <li><a href="#"><%= t "application.nav.face_face.teachers" %></a></li>
+    <li><a href="#"><%= t "application.nav.face_face.by_map" %></a></li>
+  </ul>
   </li>
 </ul>
 
 <ul class="manage">
   <% if user_signed_in? %>
+    <li> <%= current_user.name %> </li>
     <li> <%= link_to t('simple_form.logout'), destroy_user_session_path, :method=>'delete' %> </li>
     <li> <%= link_to t('simple_form.edit'), edit_user_registration_path %> </li>
     <% if current_user.has_role? :admin %>
