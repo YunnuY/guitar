@@ -1,26 +1,40 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>The page you were looking for doesn't exist (404)</title>
-  <style type="text/css">
-    body { background-color: #fff; color: #666; text-align: center; font-family: arial, sans-serif; }
-    div.dialog {
-      width: 25em;
-      padding: 0 4em;
-      margin: 4em auto 0 auto;
-      border: 1px solid #ccc;
-      border-right-color: #999;
-      border-bottom-color: #999;
-    }
-    h1 { font-size: 100%; color: #f00; line-height: 1.5em; }
-  </style>
-</head>
+  <head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <title>Unicorn! &middot; Yunnuy</title>
+    <style type="text/css" media="screen">
+      body {
+        background: #f1f1f1;
+        font-family: "HelveticaNeue", Helvetica, Arial, sans-serif;
+        text-rendering: optimizeLegibility;
+        margin: 0; }
 
-<body>
-  <!-- This file lives in public/404.html -->
-  <div class="dialog">
-    <h1>The page you were looking for doesn't exist.</h1>
-    <p>You may have mistyped the address or the page may have moved.</p>
-  </div>
-</body>
+      .container { margin: 50px auto 40px auto; width: 600px; text-align: center; }
+
+      a { color: #4183c4; text-decoration: none; }
+      a:visited { color: #4183c4 }
+      a:hover { text-decoration: none; }
+      h1 { letter-spacing: -1px; line-height: 60px; font-size: 60px; font-weight: 100; margin: 0px; text-shadow: 0 1px 0 #fff; }
+      p { color: rgba(0, 0, 0, 0.5); margin: 20px 0 40px; }
+      ul { list-style: none; margin: 25px 0; padding: 0; }
+      li { display: table-cell; font-weight: bold; width: 1%; }
+      .divider { border-top: 1px solid #d5d5d5; border-bottom: 1px solid #fafafa;}
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <p>
+        <img alt="error" src="../app/assets/images/error.png">
+      </p>
+      <p><strong>This page is taking way too long to load.</strong></p>
+      <p>Sorry about that. Please try refreshing and contact us if the problem persists.</p>
+      <div class="divider"></div>
+      <ul id="error-suggestions">
+          <li><a href="https://www.yunnuy.com/contact">Contact Support</a></li>
+          <li><a href="http://www.status.yunnuy.com">Status Site</a></li>
+          <li><a href="http://www.yunnuy.com">@Yunnuy</a></li>
+      </ul>
+    </div>
+  </body>
 </html>
