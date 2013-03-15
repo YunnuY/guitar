@@ -11,3 +11,4 @@ $(".btn").mouseover(function() {
  }).mouseout(function() {
    $(this).removeClass("btn-primary");
    });
+
