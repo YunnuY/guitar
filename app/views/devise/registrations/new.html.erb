@@ -4,21 +4,21 @@
       <h2>爱吉他, 注册更多惊喜</h2>
       <div>
         <%= f.error_notification %>
-        <%= f.input :name %>
+        <%= f.input :name, :lable => "abc" %>
         <%= f.input :email %>
         <%= f.input :password %>
         <%= f.input :password_confirmation %>
-        <%= f.submit "Submit", :class => "btn btn-primary" %>
+        <%= f.submit '注册', :class => "btn btn-primary" %>
       </div>
     <% end %>
   </div>
   <div class="span4">
     <div id="oauth">
-      <h3>你也可以通过如下方式登录</h3>
+      <h3>你也可以通过如下方式登录(待实现)</h3>
       <ul class="oauth">
-        <li><a href="/account/auth/weibo" class="weibo">新浪微博</a></li>
-        <li><a href="/account/auth/renren" class="renren">人人</a></li>
-        <li><a href="/account/auth/qq_connect" class="tqq">QQ登录</a></li>
+        <li><a href="#" class="weibo">新浪微博</a></li>
+        <li><a href="#" class="renren">人人</a></li>
+        <li><a href="#" class="tqq">QQ登录</a></li>
       </ul>
     </div>
   </div>

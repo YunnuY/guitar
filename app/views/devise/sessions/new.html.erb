@@ -4,19 +4,18 @@
     <%= simple_form_for(resource, :as => resource_name, :url => session_path(resource_name), :html => {:class => 'form-vertical' }) do |f| %>
       <%= f.input :email, :autofocus => true %>
       <%= f.input :password %>
-      <%= f.input :remember_me, :as => :boolean if devise_mapping.rememberable? %>
-      <%= f.button :submit, "Sign in", :class => 'btn-primary' %>
+      <%= f.submit '登录', :class => 'btn-primary' %>
     <% end %>
+    <%= render "devise/shared/links" %>
   </div>
   <div class="span4">
     <div id="oauth">
-      <h3>你也可以通过如下方式登录</h3>
+      <h3>你也可以通过如下方式登录(待实现)</h3>
       <ul class="oauth">
-        <li><a href="/account/auth/weibo" class="weibo">新浪微博</a></li>
-        <li><a href="/account/auth/renren" class="renren">人人</a></li>
-        <li><a href="/account/auth/qq_connect" class="tqq">QQ登录</a></li>
+        <li><a href="#" class="weibo">新浪微博</a></li>
+        <li><a href="#" class="renren">人人</a></li>
+        <li><a href="#" class="tqq">QQ登录</a></li>
       </ul>
     </div>
   </div>
 </div>
-<%= render "devise/shared/links" %>
