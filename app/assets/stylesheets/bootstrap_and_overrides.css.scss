@@ -3,6 +3,7 @@
 
 $main-color: #79b32b;
 $orange-color: #ff7504;
+
 .navbar { 
   height: 80px; 
   .brand {
@@ -34,10 +35,10 @@ $orange-color: #ff7504;
         }
     }
     li.current {
-        
         a {
             color: $orange-color;
             font-weight: bold;
+            text-decoration:none;
             span{
               border-bottom: 2px solid $orange-color;
             }
