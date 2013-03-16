@@ -5,25 +5,15 @@ $main-color: #79b32b;
 $orange-color: #ff7504;
 
 .navbar { 
-  height: 120px; 
-  .brand {
-    margin-left: 140px;
-    text-align: center;
-    padding: 0px 0px 0px;
-    .brand_logo {
-      width: 145px;
-      height: 122px; //if lovin guitar here, height should be 38px
-    }
-    .brand_text {
-      font-size: 120%;
-      margin-top: 4px;
-      a
-      { 
-        color: $main-color;
-        &:hover {text-decoration: none;}
+  .row{
+      a{
+        img{
+          padding-left: 168px;
+          padding-top: 7px;
+        }
       }
-    }
   }
+  height: 120px; 
   .nav {
     margin-left: 600px;
     margin-top: 10px;
@@ -56,8 +46,8 @@ $orange-color: #ff7504;
     float: right;
     font-size: 100%;
     list-style: none;
-    margin-right: 75px;
-    margin-top: 12px;
+    margin-right: 105px;
+    margin-top: 30px;
     font-weight: bold;
     padding-left: 10px;
     li {

@@ -123,7 +123,12 @@ h3 {
   font-size: 14px;
   color: $main-color;
 }
-
+strong{
+  a{
+    color: $main-color;
+    &:hover {color: $orange-color;}
+  }
+}
 h4 {
   font-size: 12px;
 }
