@@ -16,7 +16,6 @@ $orange-color: #ff7504;
   height: 120px; 
   .nav {
     margin-left: 600px;
-    margin-top: 10px;
     font-size: 130%;
     font-weight: bold;
     li{
@@ -60,4 +59,31 @@ $orange-color: #ff7504;
   }
 }
 
+// style for signin and signup
 
+.signup_or_signin #oauth {
+    margin-top: 10px;
+    text-align: left;
+}
+
+.signup_or_signin ul.oauth{
+   li {
+        margin: 10px;
+    }
+    a {
+        background: url("/assets/icons.png") no-repeat;
+        text-indent: -9999px;
+        display: block;
+        width: 119px;
+        height: 24px;
+    }
+    a.weibo {
+        background-position: 0 -97px;
+    }
+    a.renren {
+        background-position: 0 -174px;
+    }
+    a.tqq {
+        background-position: 0 -147px;
+    }
+}
