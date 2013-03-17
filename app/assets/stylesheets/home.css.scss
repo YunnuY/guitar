@@ -99,3 +99,24 @@
 		}
 	}
 }
+
+
+// image-wall style
+
+.tablar{
+	position: relative;
+	.span3{
+		width:210px;
+		// height: 800px;
+		list-style-type:none;
+		.img{
+			height: 150px;
+			width: 210px;
+		}
+		a{
+			width: 210px;
+			color: $main-color;
+			margin-top: 10px;
+		}
+	} 
+}

@@ -4,7 +4,7 @@ Guitar::Application.routes.draw do
 
   root :to => 'home#index'
   match "/artist" => "home#_artist"
-  match "/tablar" => "home#_artist"
+  match "/tablar" => "home#_tablar"
   match "/tool" => "home#_artist"
   match "/bbs" => "home#_artist"
   match "/teacher" => "home#_artist"
