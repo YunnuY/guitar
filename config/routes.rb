@@ -3,9 +3,16 @@ Guitar::Application.routes.draw do
   resources :comments
 
   root :to => 'home#index'
+  match "/artist" => "home#_artist"
+  match "/tablar" => "home#_artist"
+  match "/tool" => "home#_artist"
+  match "/bbs" => "home#_artist"
+  match "/teacher" => "home#_artist"
+  match "/map" => "home#_artist"
+
 
   devise_scope :user do
-    match '/user/confirmation' => 'confirmations#update', :via => :put, :as => :update_user_confirmation
+    match '/user/confirmation' => 'confirmations#update', :via => :put, :as => :update_user_confirmation    
   end
 
   devise_for :users
