@@ -1,5 +1,5 @@
-<div class="navbar">
 
+<div class="navbar">
   <div class="row">
       <a href="/"><%= image_tag "site_logo.png" %></a>
       <ul class="manage">
@@ -19,18 +19,18 @@
 
   <ul class="nav"> 
     <li><a href="/"><span><%= t "application.nav.home" %></span></a></li>
-    <li><a href="/episodes"><span><%= t "application.nav.video" %></span></a></li>
-    <li><a href="#"><span><%= t "application.nav.tablar" %></span></a></li>
-    <li><a href="#"><span><%= t "application.nav.artist" %></span></a></li>
-    <li><a href="#"><span><%= t "application.nav.tool" %></span></a></li>
-    <li><a href="#"><span><%= t "application.nav.bbs" %></span></a></li>
+    <li><a href="/episodes"><span class="hint--top hint--success hint--always" data-hint="hot"><%= t "application.nav.video" %></span></a></li>
+    <li><a href="/tablar"><span><%= t "application.nav.tablar" %></span></a></li>
+    <li><a href="/artist"><span><%= t "application.nav.artist" %></span></a></li>
+    <li><a href="/tool"><span><%= t "application.nav.tool" %></span></a></li>
+    <li><a href="/bbs"><span><%= t "application.nav.bbs" %></span></a></li>
     <li class="dropdown">
     <a href="#" class="dropdown-toggle" data-toggle="dropdown"> 
       <%= t "application.nav.face_to_face" %><b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
-      <li><a href="#"><%= t "application.nav.face_face.teachers" %></a></li>
-      <li><a href="#"><%= t "application.nav.face_face.by_map" %></a></li>
+      <li><a href="/teacher"><%= t "application.nav.face_face.teachers" %></a></li>
+      <li><a href="/map"><%= t "application.nav.face_face.by_map" %></a></li>
     </ul>
     </li>
   </ul>
