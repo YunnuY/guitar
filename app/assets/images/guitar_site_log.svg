@@ -14,7 +14,10 @@
    id="svg2"
    version="1.1"
    inkscape:version="0.48.3.1 r9886"
-   sodipodi:docname="guitar_site_log.svg">
+   sodipodi:docname="guitar_site_log.svg"
+   inkscape:export-filename="/home/ming/work/guitar/app/assets/images/guitar_site_log.png"
+   inkscape:export-xdpi="90"
+   inkscape:export-ydpi="90">
   <defs
      id="defs4" />
   <sodipodi:namedview
@@ -43,6 +46,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -52,7 +56,7 @@
      id="layer1">
     <g
        id="g3348"
-       transform="matrix(0.60312373,0,0,0.60312373,57.229361,67.521293)">
+       transform="matrix(0.514929,0,0,0.514929,69.946997,82.526025)">
       <g
          transform="matrix(0.19826773,-0.03923406,0.04242509,0.20323076,107.81604,144.19465)"
          id="g3290">
