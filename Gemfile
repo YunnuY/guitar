@@ -11,6 +11,7 @@ group :assets do
   gem 'compass-rails' 
   gem 'oily_png'
 end
+gem 'pry-rails', :group => :development
 gem 'jquery-rails'
 gem "rspec-rails", ">= 2.11.4", :group => [:development, :test]
 gem "email_spec", ">= 1.2.1", :group => :test

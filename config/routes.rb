@@ -3,12 +3,10 @@ Guitar::Application.routes.draw do
   resources :comments
 
   root :to => 'home#index'
-  match "/artist" => "home#_artist"
-  match "/tablar" => "home#_artist"
-  match "/tool" => "home#_artist"
-  match "/bbs" => "home#_artist"
-  match "/teacher" => "home#_artist"
-  match "/map" => "home#_artist"
+  match "/artist" => "home#_under_construction"
+  match "/tablar" => "home#_under_construction"
+  match "/tool"   => "home#_under_construction"
+  match "/bbs"    => "home#_under_construction"
 
 
   devise_scope :user do
