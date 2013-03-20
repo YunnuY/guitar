@@ -3,8 +3,9 @@
     <div class="span3">
       <%= image_tag("/assets/lady.jpg",  :alt => "#{e.description}") %>
       <ul class="comments">
-        <% e.comments do |c| %>
-          <li>c.inspect</li>
+        <%= e.name %>
+        <% e.comments.each do |c| %>
+          <li><%= "#{c.name}: #{c.content}" %></li>
         <% end %>
       </ul>
     </div>
