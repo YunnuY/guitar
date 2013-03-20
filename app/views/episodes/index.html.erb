@@ -1,5 +1,12 @@
 <div class="column-fluid tablar">
-  <% 50.times do |t| %>
-    <%= render :partial => "thumbnail"%>
+  <% @episodes.each do |e| %>
+    <div class="span3">
+      <%= image_tag("/assets/lady.jpg",  :alt => "#{e.description}") %>
+      <ul class="comments">
+        <% e.comments do |c| %>
+          <li>c.inspect</li>
+        <% end %>
+      </ul>
+    </div>
   <% end %>
 </div>
