@@ -1,4 +1,5 @@
-<% @episodes.each do |episode| %>
-  <%= render :partial => episode %>
-  <%= render :partial => "home/tablar"%>
-<% end %>
+<div class="column-fluid tablar">
+  <% 50.times do |t| %>
+    <%= render :partial => "thumbnail"%>
+  <% end %>
+</div>

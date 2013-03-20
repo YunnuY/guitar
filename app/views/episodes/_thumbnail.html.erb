@@ -1,12 +1,9 @@
-<li class="span4">
-<div class="thumbnail">
-  <embed src="http://player.youku.com/player.php/sid/XMjIyMjM4Mzc2/v.swf" allowFullScreen="true" quality="high" width="306" height="260" align="middle" allowScriptAccess="always" 
-  type="application/x-shockwave-flash">
-  <div class="caption">
-    <h3>做我老婆好不好 --徐誉滕</h3>
-    <p>总播放数:456,020</p>
-    <p>视频信息：要表白或是求婚? 想唱首歌给她? 这首歌会是一个不错的选择！</p>
-    <strong><a href="/episodes">喜欢？查看更多</a></strong>
-  </div>
+<div class="span3">
+  <%= image_tag("/assets/lady.jpg",  :alt => "法国竖琴超女玛利昂演奏《卡农》") %>
+  <ul class="comments">
+  <% Random.rand(5).times do |time| %>
+    <li> <a href="/episodes" target="_blank">法国竖琴超女玛利昂演奏《卡农》</a></li>
+  <% end %>
+  </ul>
 </div>
-</li>
+
