@@ -10,15 +10,27 @@ $orange-color: #ff7504;
         img{
           padding-left: 168px;
           padding-top: 7px;
+          height: 90px;
         }
       }
       .manage{
-          li.current {
-            a {
-                color: $orange-color;
-                font-weight: bold;
-                text-decoration:none;
-              }
+            width: 76px;
+            height: 16px;
+            float: right;
+            list-style: none;
+            margin-right: 110px;
+            margin-top: 40px;
+            font-weight: bold;
+            padding-left: 0px;
+            li {
+              float: left;
+              margin: 5px;
+              a {
+                  height: 30px;
+                  color: $main-color;
+                  font-weight: bold;
+                  text-decoration:none;
+                }
             }
       }
     }
@@ -28,7 +40,7 @@ $orange-color: #ff7504;
     font-size: 130%;
     font-weight: bold;
     li{
-        a{
+        a{  
             color: $main-color;      
             &:hover{color: $main-color; text-decoration:underline;}
         }
@@ -46,23 +58,6 @@ $orange-color: #ff7504;
     .dropdown {
     li{
         font-size: 70%;
-      }
-    }
-  }
-  
-  .manage {
-    float: right;
-    font-size: 100%;
-    list-style: none;
-    margin-right: 110px;
-    margin-top: 40px;
-    font-weight: bold;
-    padding-left: 10px;
-    li {
-      float: left;
-      margin: 5px;
-      a{
-        color: $main-color;
       }
     }
   }
