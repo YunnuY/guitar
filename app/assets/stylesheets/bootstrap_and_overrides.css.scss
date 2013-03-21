@@ -15,7 +15,6 @@ $orange-color: #ff7504;
       }
       .manage{
             width: 76px;
-            height: 16px;
             float: right;
             list-style: none;
             margin-right: 110px;
@@ -25,8 +24,11 @@ $orange-color: #ff7504;
             li {
               float: left;
               margin: 5px;
+              height: 16px;
+              width: 28px;
               a {
-                  height: 30px;
+                  height: 16px;
+                  width: 28px;
                   color: $main-color;
                   font-weight: bold;
                   text-decoration:none;
