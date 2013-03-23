@@ -37,33 +37,37 @@ $orange-color: #ff7504;
       }
     }
   height: 120px; 
-  .nav {
-    padding-left: 0px;
-    margin: 0px;
-    margin-left: 430px;
-    font-size: 130%;
-    font-weight: bold;
-    li{
-        a{  
-            color: $main-color;      
-            &:hover{color: $main-color; text-decoration:underline;}
+  .menu{
+        height: 22px;
+        padding-left: 0px;
+        margin-left: 430px;
+        font-size: 130%;
+        font-weight: bold;
+        li{
+          height: 22px;
+          float: left;
+          margin-left: 30px;
+          list-style: none;
+          a{  
+              color: $main-color;      
+              &:hover{color: $main-color; text-decoration:underline;}
+           }
         }
-    }
-    li.current {
-        a {
-            color: $orange-color;
-            font-weight: bold;
-            text-decoration:none;
-            span{
-              border-bottom: 2px solid $orange-color;
+       li.current {
+          a {
+              color: $orange-color;
+              font-weight: bold;
+              text-decoration:none;
+              span{
+                border-bottom: 2px solid $orange-color;
+              }
             }
-          }
+        }        
+      .dropdown {
+          li{
+              font-size: 70%;
+            }
       }
-    .dropdown {
-    li{
-        font-size: 70%;
-      }
-    }
   }
 }
 
@@ -79,6 +83,7 @@ $orange-color: #ff7504;
     }
     #signin{
       padding-bottom: 115px;
+      width: 370px;
     }
 }
 .signup_or_signin ul.oauth{

@@ -1,5 +1,5 @@
-// highlight the navgiation bar when come to the current page.
-
+/*** highlight the navgiation bar when come to the current page. ***/
+ 
 var nav = document.getElementById("nav");
 var links = document.getElementsByTagName("li");
 var lilen = document.getElementsByTagName("a");
