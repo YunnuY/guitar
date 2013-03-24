@@ -20,9 +20,25 @@ header{
 	 }
 }
 
+.marketing{
+		width: 1000px;
+		height: 246px;
+		// position: relative;
+		// padding-right: 143px;
+			.span4{
+				width: 316px;
+				height: 245px;
+			}
+		
+}
+
 /*** footer style ***/
 .footer{
 	padding-top: 10px;
+	width: 1000px;
+	img{
+		padding-left: 160px;
+	}
 	p{
 		a{
 			color: $main-color;
@@ -120,10 +136,14 @@ header{
 			height: 150px;
 			width: 210px;
 		}
-		a{
+		li{
 			width: 210px;
 			color: $main-color;
-			margin-top: 10px;
+			list-style: none;
+			a{
+				color: $orange-color;
+				&:hover {color: $main-color; }
+			}
 		}
 	} 
 }

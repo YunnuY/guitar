@@ -15,12 +15,3 @@ for (var i=0; i<links.length; i++)
 }
 links[last].className = "current";
 
-$(function()
-{
-    $('.home index') .css({'height': (($(window).height()) - 361)+'px'});
-
-    $(window).resize(function(){
-        $('.home index') .css({'height': (($(window).height()) - 361)+'px'});
-        // alert('resized');
-    });
-});

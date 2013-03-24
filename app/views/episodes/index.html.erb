@@ -1,13 +1,38 @@
-<div class="column-fluid tablar">
-  <% @episodes.each do |e| %>
+<div class="tablar">
     <div class="span3">
+      <% @episodes[0..@episodes.count/4-1].each do |e| %>
       <%= image_tag("/assets/lady.jpg",  :alt => "#{e.description}") %>
-      <ul class="comments">
-        <%= e.name %>
+        <li><a href=""><%= e.name %></a></li>
         <% e.comments.each do |c| %>
           <li><%= "#{c.name}: #{c.content}" %></li>
         <% end %>
-      </ul>
+      <% end %>
     </div>
-  <% end %>
+    <div class="span3">
+      <% @episodes[@episodes.count/4..@episodes.count/2-1].each do |e| %>
+      <%= image_tag("/assets/lady.jpg",  :alt => "#{e.description}") %>
+        <li><a href=""><%= e.name %></a></li>
+        <% e.comments.each do |c| %>
+          <li><%= "#{c.name}: #{c.content}" %></li>
+        <% end %>
+      <% end %>
+    </div>
+    <div class="span3">
+      <% @episodes[@episodes.count/2..@episodes.count*3/4-1].each do |e| %>
+      <%= image_tag("/assets/lady.jpg",  :alt => "#{e.description}") %>
+        <li><a href=""><%= e.name %></a></li>
+        <% e.comments.each do |c| %>
+          <li><%= "#{c.name}: #{c.content}" %></li>
+        <% end %>
+      <% end %>
+    </div>
+      <div class="span3">
+      <% @episodes[@episodes.count*3/4..@episodes.count].each do |e| %>
+      <%= image_tag("/assets/lady.jpg",  :alt => "#{e.description}") %>
+        <li><a href=""><%= e.name %></a></li>
+        <% e.comments.each do |c| %>
+          <li><%= "#{c.name}: #{c.content}" %></li>
+        <% end %>
+      <% end %>
+    </div>
 </div>
