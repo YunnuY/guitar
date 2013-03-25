@@ -32,5 +32,5 @@ gem "quiet_assets", ">= 1.0.1", :group => :development
 gem 'redcarpet'
 gem 'pygments.rb'
 gem "jquery-atwho-rails", "0.1.6"
-gem 'will_paginate', '> 3.0'
 gem "dynamic_form"
+gem 'kaminari'

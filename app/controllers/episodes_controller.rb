@@ -2,12 +2,14 @@ class EpisodesController < ApplicationController
   # GET /episodes
   # GET /episodes.json
   def index
-    @episodes = Episode.all
+    # @episodes = Episode.all
 
-    respond_to do |format|
-      format.html # index.html.erb
-      format.json { render json: @episodes }
-    end
+    # respond_to do |format|
+    #   format.html # index.html.erb
+    #   format.json { render json: @episodes }
+    # end
+    @episodes= Episode.page(params[:page]).order("name").per(12)
+
   end
 
   # GET /episodes/1
