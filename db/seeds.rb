@@ -12,7 +12,7 @@ user2 = User.create! :name => 'User2', :email => 'user2@example.com', :password 
 user2.confirm!
 user.add_role :admin
 
-10.times do |index|
+50.times do |index|
   episode = Episode.create! :name => "episode#{index}", 
                             :notes => "notes#{index}", 
                             :published_at => "2012-12-03", 
@@ -21,7 +21,7 @@ user.add_role :admin
                             :comments_count => 0, 
                             :youku => "www.youku.com"
   puts "episode #{episode.id} created"
-  (2 + Random.rand(3)).times do |index2|
+  (Random.rand(5)).times do |index2|
     comment = Comment.create! :episode_id => episode.id, 
                     :content => "comment content", 
                     :name => user.name, 
@@ -30,5 +30,3 @@ user.add_role :admin
   puts "comment #{comment.id} for episode #{episode.id} created"
   end
 end
-
-
