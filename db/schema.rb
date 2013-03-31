@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121226121651) do
+ActiveRecord::Schema.define(:version => 20130331090342) do
 
   create_table "comments", :force => true do |t|
     t.integer  "episode_id"
@@ -30,10 +30,17 @@ ActiveRecord::Schema.define(:version => 20121226121651) do
     t.datetime "published_at"
     t.integer  "seconds"
     t.text     "description"
-    t.integer  "comments_count", :default => 0
+    t.integer  "comments_count",   :default => 0
     t.string   "youku"
-    t.datetime "created_at",                    :null => false
-    t.datetime "updated_at",                    :null => false
+    t.datetime "created_at",                      :null => false
+    t.datetime "updated_at",                      :null => false
+    t.string   "title"
+    t.string   "play_url"
+    t.string   "thumb_pic_url"
+    t.string   "uploader"
+    t.integer  "duration_in_secs"
+    t.string   "source_site"
+    t.string   "status"
   end
 
   create_table "roles", :force => true do |t|
