@@ -12,9 +12,14 @@ user2 = User.create! :name => 'User2', :email => 'user2@example.com', :password 
 user2.confirm!
 user.add_role :admin
 
-50.times do |index|
+puts "invoke script to load some seed data"
+rails_root = File.dirname( File.absolute_path( __FILE__ ) ) + "/.."
+ruby "#{rails_root}/script/yunnuy/down_video.rb"
+
+20.times do |index|
   episode = Episode.create! :name => "episode#{index}", 
                             :notes => "notes#{index}", 
+                            :thumb_pic_url => "/assets/lady.jpg", 
                             :published_at => "2012-12-03", 
                             :seconds => 10, 
                             :description => "description1", 

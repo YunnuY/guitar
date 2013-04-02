@@ -2,18 +2,18 @@
 
 require 'rubygems'
 require 'active_record'
-require 'mysql'
+#require 'mysql'
 require 'nokogiri'
 require 'open-uri'
 require 'logger'
 require 'yaml'
 
-require '../../app/models/episode'
-
+rails_root = File.dirname( File.absolute_path( __FILE__ ) ) + "/../.."
+require_relative "#{rails_root}/app/models/episode"
 
 ActiveRecord::Base.establish_connection(
   :adapter => "sqlite3",
-  :database  => "../../db/development.sqlite3"
+  :database  => "#{rails_root}/db/development.sqlite3"
 )
 
 #For mysql
