@@ -8,7 +8,7 @@ class EpisodesController < ApplicationController
     #   format.html # index.html.erb
     #   format.json { render json: @episodes }
     # end
-    @episodes= Episode.page(params[:page]).order("id").per(20)
+    @episodes= Episode.page(params[:page]).order("id").per(24)
 
   end
 
