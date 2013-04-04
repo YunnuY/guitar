@@ -9,11 +9,12 @@ require 'logger'
 require 'yaml'
 
 rails_root = File.dirname( File.absolute_path( __FILE__ ) ) + "/../.."
+
 require_relative "#{rails_root}/app/models/episode"
 
 ActiveRecord::Base.establish_connection(
   :adapter => "sqlite3",
-  :database  => "#{rails_root}/db/development.sqlite3"
+  :database  => "#{rails_root}/db/#{ENV['RAILS_ENV']}.sqlite3"
 )
 
 #For mysql
@@ -50,6 +51,17 @@ module Soku
         vid_id  = ul.css('li.v_title').css('a')[0]['_log_vid'].strip  
         video.play_url = "http://player.youku.com/player.php/sid/" + vid_id + "/v.swf"  
         video.thumb_pic_url = ul.css('li.v_thumb').css('img')[0]['src'].strip
+        duration = ul.css('li.v_time').css('span.num').text.strip.split(':')
+
+        video.duration_in_secs = if duration.count ==3 then duration[0].to_i*3600 + duration[1].to_i*60 + duration[2].to_i
+                      elsif duration.count ==2 then duration[0].to_i*60 + duration[1].to_i
+                      elsif duration.count ==1 then duration[0]
+                      else -1
+        end
+
+         video.uploader = 'System'
+         video.source_site = 'Youku'
+         video.status = 'N'
 #        video.Uploader    = ul.css('li.v_user').css('a').text.stripdd
 #        video.Duration    = ul.css('li.v_time').css('span.num').text.strip
 #        video.upload_time = ul.css('li.v_pub').css('span').text.strip
