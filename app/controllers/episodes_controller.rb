@@ -9,7 +9,6 @@ class EpisodesController < ApplicationController
     #   format.json { render json: @episodes }
     # end
     @episodes= Episode.page(params[:page]).order("id").per(24)
-
   end
 
   # GET /episodes/1

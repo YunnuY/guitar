@@ -12,7 +12,9 @@ require 'yaml'
 rails_root = File.dirname( File.absolute_path( __FILE__ ) ) + "/../.."
 require_relative "#{rails_root}/app/models/episode"
 
-env = "development" unless ENV['RAILS_ENV']
+env = "development"
+env = ENV['RAILS_ENV'] if ENV['RAILS_ENV']
+puts "env:#{env}"
 ActiveRecord::Base.establish_connection(
   :adapter => "sqlite3",
   :database  => "#{rails_root}/db/#{env}.sqlite3"

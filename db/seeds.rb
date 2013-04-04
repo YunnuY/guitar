@@ -12,25 +12,24 @@ user2 = User.create! :name => 'User2', :email => 'user2@example.com', :password 
 user2.confirm!
 user.add_role :admin
 
-#puts "invoke script to load some seed data"
-#rails_root = File.dirname( File.absolute_path( __FILE__ ) ) + "/.."
-#ruby "#{rails_root}/script/yunnuy/down_video.rb"
+rails_root = File.dirname( File.absolute_path( __FILE__ ) ) + "/.."
+ruby "#{rails_root}/script/yunnuy/down_video.rb"
 
-20.times do |index|
-  episode = Episode.create! :name => "episode#{index}", 
-                            :notes => "notes#{index}", 
-                            :img_url => "/assets/lady.jpg", 
-                            :published_at => "2012-12-03", 
-                            :seconds => 10, 
-                            :comments_count => 0, 
-                            :source_site => "www.youku.com"
-  puts "episode #{episode.id} created"
-  (Random.rand(5)).times do |index2|
-    comment = Comment.create! :episode_id => episode.id, 
-                    :content => "comment content", 
-                    :name => user.name, 
-                    :email => user.email, 
-                    :user_id => user.id
-  puts "comment #{comment.id} for episode #{episode.id} created"
-  end
-end
+#20.times do |index|
+#  episode = Episode.create! :name => "episode#{index}", 
+#                            :notes => "notes#{index}", 
+#                            :img_url => "/assets/lady.jpg", 
+#                            :published_at => "2012-12-03", 
+#                            :seconds => 10, 
+#                            :comments_count => 0, 
+#                            :source_site => "www.youku.com"
+#  puts "episode #{episode.id} created"
+#  (Random.rand(5)).times do |index2|
+#    comment = Comment.create! :episode_id => episode.id, 
+#                    :content => "comment content", 
+#                    :name => user.name, 
+#                    :email => user.email, 
+#                    :user_id => user.id
+#  puts "comment #{comment.id} for episode #{episode.id} created"
+#  end
+#end
