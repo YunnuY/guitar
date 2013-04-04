@@ -1,50 +1,33 @@
 <div class="episode_index">
+  <% (0..5).each do |i| %>
   <div class="span3">
-    <% @episodes[0..@episodes.count/4-1].each do |e| %>
-      <%= image_tag("#{e.thumb_pic_url}",  :alt => "#{e.name}") %>
-      <li><%= link_to e.name, e %></li>
-      <% e.comments.each do |c| %>
-        <li><%= "#{c.name}: #{c.content}" %></li>
-      <% end %>
-    <% end %>
-  </div>
-  <div class="span3">
-    <% @episodes[@episodes.count/4..@episodes.count/2-1].each do |e| %>
-      <%= image_tag("#{e.thumb_pic_url}",  :alt => "#{e.name}") %>
-      <li><%= link_to e.name, e %></li>
-      <% e.comments.each do |c| %>
-        <li><%= "#{c.name}: #{c.content}" %></li>
-      <% end %>
-    <% end %>
-  </div>
-  <div class="span3">
-    <% @episodes[@episodes.count/2..@episodes.count*3/4-1].each do |e| %>
-      <%= image_tag("#{e.thumb_pic_url}",  :alt => "#{e.name}") %>
-      <li><%= link_to e.name, e %></li>
-      <% e.comments.each do |c| %>
-        <li><%= "#{c.name}: #{c.content}" %></li>
-      <% end %>
-<<<<<<< HEAD
-    </div>
-    <div class="span3">
-      <% @episodes[@episodes.count*3/4..@episodes.count].each do |e| %>
-      <%= image_tag("/assets/lady.jpg",  :alt => "#{e.description}") %>
-        <li><%= link_to e.name, e %></li>
-        <% e.comments.each do |c| %>
+        <%= image_tag("#{@episodes[4*i].thumb_pic_url}",  :alt => "#{@episodes[4*i].name}") %>
+        <li><%= link_to @episodes[4*i].name, @episodes[4*i] %></li>
+        <% @episodes[4*i].comments.each do |c| %>
           <li><%= "#{c.name}: #{c.content}" %></li>
         <% end %>
-=======
-    <% end %>
   </div>
   <div class="span3">
-    <% @episodes[@episodes.count*3/4..@episodes.count].each do |e| %>
-      <%= image_tag("#{e.thumb_pic_url}",  :alt => "#{e.name}") %>
-      <li><%= link_to e.name, e %></li>
-      <% e.comments.each do |c| %>
-        <li><%= "#{c.name}: #{c.content}" %></li>
->>>>>>> 11521acb65bcfb63669ad1078ba4233263682b97
-      <% end %>
-    <% end %>
+        <%= image_tag("#{@episodes[4*i+1].thumb_pic_url}",  :alt => "#{@episodes[4*i+1].name}") %>
+        <li><%= link_to @episodes[4*i+1].name, @episodes[4*i+1] %></li>
+        <% @episodes[4*i+1].comments.each do |c| %>
+          <li><%= "#{c.name}: #{c.content}" %></li>
+        <% end %>
   </div>
+  <div class="span3">
+        <%= image_tag("#{@episodes[4*i+2].thumb_pic_url}",  :alt => "#{@episodes[4*i+2].name}") %>
+        <li><%= link_to @episodes[4*i+2].name, @episodes[4*i+2] %></li>
+        <% @episodes[4*i+2].comments.each do |c| %>
+          <li><%= "#{c.name}: #{c.content}" %></li>
+        <% end %>
+  </div>
+  <div class="span3">
+        <%= image_tag("#{@episodes[4*i+3].thumb_pic_url}",  :alt => "#{@episodes[4*i+3].name}") %>
+        <li><%= link_to @episodes[4*i+3].name, @episodes[4*i+3] %></li>
+        <% @episodes[4*i+3].comments.each do |c| %>
+          <li><%= "#{c.name}: #{c.content}" %></li>
+        <% end %>
+  </div>
+  <% end %>
 </div>
 <%= paginate @episodes %>
