@@ -5,9 +5,12 @@ class CreateEpisodes < ActiveRecord::Migration
       t.text :notes
       t.datetime :published_at
       t.integer :seconds
-      t.text :description
       t.integer :comments_count, :default => 0
-      t.string :youku
+      t.string :play_url
+      t.string :img_url
+      t.string :uploader
+      t.string :source_site
+      t.string :status
 
       t.timestamps
     end
