@@ -67,7 +67,10 @@ module Soku
         video.uploader = 'System'
         video.source_site = 'Youku'
         video.status = 'N'
-        video.published_at = ul.css('li.v_pub').css('span').text.strip
+        video.notes = 'Great video!'
+        video.published_at = Time.now
+        # the result is like 5天前 3个月前, so need transfer to ruby date first
+        #original_publish_time = ul.css('li.v_pub').css('span').text.strip
         puts "%4s : [ %s ]" % [index, video.name]
         video.save
       end

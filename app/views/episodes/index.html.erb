@@ -4,7 +4,7 @@
       <% @episodes.each_with_index do |episode, index| %>
         <% if column == index % 4 %>
           <%= image_tag("#{episode.img_url}", :alt => "#{episode.name}", :width => 250) %>
-          <li><%= link_to episode.name, episode %></li>
+          <li><%= link_to "#{episode.name}", episode %></li>
           <% episode.comments.each do |c| %>
             <li><%= "#{c.name}: #{c.content}" %></li>
           <% end %>
