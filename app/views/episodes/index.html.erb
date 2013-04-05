@@ -1,11 +1,17 @@
 <div class="episode_index">
-<% @episodes.each do |e| %>
-  <div class="span3">
-        <%= image_tag("#{e.img_url}",  :alt => "#{e.name}") %>
-        <li><%= link_to e.name, e %></li>
-        <% e.comments.each do |c| %>
-          <li><%= "#{c.name}: #{c.content}" %></li>
-        <% end %>
-  </div>
-<% end %>
+  <% @episodes.each_with_index do |episode, index| %>
+    <% (0..3).each do |column| %>
+      <% if column == index % 4 %>
+        <div class="span3">
+          <%= image_tag("#{episode.img_url}",  :alt => "#{episode.name}") %>
+          <li><%= link_to episode.name, episode %></li>
+          <% episode.comments.each do |c| %>
+            <li><%= "#{c.name}: #{c.content}" %></li>
+          <% end %>
+        </div>
+      <% end %>
+    <% end %>
+  <% end %>
+</div>
 <%= paginate @episodes %>
+
