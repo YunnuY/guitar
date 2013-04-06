@@ -54,7 +54,10 @@ module Soku
         vid = ul.css('li.v_title').css('a')[0]['_log_vid'].strip
         video.play_url = "http://player.youku.com/player.php/sid/" + vid + "/v.swf"  
         video.img_url = ul.css('li.v_thumb').css('img')[0]['src'].strip
+        #Change http://gX.ykimg.com/0 to http://gX.ykimg.com/1 to get url of large thumb pic
+        video.img_url[video.img_url.index('.com/0') + 5] = '1'
         duration = ul.css('li.v_time').css('span.num').text.strip.split(':')
+        # Convert duration into integer       
         video.seconds = if duration.count ==3 then 
                                    duration[0].to_i*3600 + duration[1].to_i*60 + duration[2].to_i
                                  elsif duration.count ==2 then 
