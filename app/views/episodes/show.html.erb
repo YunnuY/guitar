@@ -22,13 +22,13 @@
     <%= form_for(Comment.new(:episode_id => @episode.id, :user_id => current_user.id), :remote => true) do |f| %>
       <%= f.hidden_field :episode_id %>
       <%= f.hidden_field :user_id  %>
-      <%= f.label t("add_comment") %>
-      <a  class="formatting_tips" data-toggle="modal" href="#markdown_cheatsheet" ><%= t("formatting") %></a>
+      <%= f.label "评论" %>
+      <a class="formatting_tips" data-toggle="modal" href="#markdown_cheatsheet" ><%= "Markdown参考" %></a>
       <div class="error">
         <%= t("comment_empty_error") %>
       </div>
       <%= f.text_area :content %>
-      <%= f.submit t("publish_comment"), :class=>"btn btn-success", :id => "comment_btn" %>
+      <%= f.submit "发表", :class=>"btn btn-success", :id => "comment_btn" %>
     <% end %>
   </div>
   <% else %>
