@@ -195,6 +195,7 @@ textarea#episode_notes { height: 350px; }
 /*** image-wall style ***/
 .episode_index{
 	position: relative;
+  padding-top: 10px;
 	.span3{
 		width:210px;
 		// height: 800px;
@@ -203,15 +204,22 @@ textarea#episode_notes { height: 350px; }
 			height: 150px;
 			width: 210px;
 		}
-		li{
-			width: 210px;
-			color: $main-color;
-			list-style: none;
-			a{
-				color: $orange-color;
-				&:hover {color: $main-color; }
-			}
-		}
+    ul{
+        padding-left: 0px;
+        li{
+          width: 210px;
+          color: $main-color;
+          list-style: none;
+          a{
+            color: $orange-color;
+            &:hover {color: $main-color; }
+          }
+        }
+        div{
+            color: $orange-color;
+            &:hover {color: $main-color; }
+        }
+    }
 	} 
 }
 
