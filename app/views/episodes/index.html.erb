@@ -3,6 +3,7 @@
     <div class="span3">
       <% @episodes.each_with_index do |episode, index| %>
         <% if column == index % 4 %>
+<<<<<<< HEAD
           <%= image_tag("#{episode.img_url}", :alt => "#{episode.name}" ) %>
           <ul>
             <li><%= link_to episode.name, episode %></li>
@@ -10,6 +11,13 @@
               <div><%= "#{c.name}: #{c.content}" %></div>
             <% end %>
           </ul>
+=======
+          <%= image_tag("#{episode.img_url}", :alt => "#{episode.name}", :width => 250) %>
+          <li><%= link_to "#{episode.name}", episode %></li>
+          <% episode.comments.each do |c| %>
+            <li><%= "#{c.name}: #{c.content}" %></li>
+          <% end %>
+>>>>>>> 977b1b6a8496636a7bfcca97e828270cedc51061
         <% end %>
       <% end %>
     </div>
