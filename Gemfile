@@ -34,3 +34,4 @@ gem 'pygments.rb'
 gem "jquery-atwho-rails", "0.1.6"
 gem "dynamic_form"
 gem 'kaminari'
+gem 'weibo_2'

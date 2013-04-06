@@ -42,25 +42,3 @@
 </div>
 
 <%= render "comments/markdown_cheatsheet" %>
-
-<% content_for :scripts do %>
-  <%= javascript_include_tag "episodes" %>
-  <script>
-  !function ($) {
-    $("#jquery_jplayer_1").jPlayer({
-      ready: function () {
-        $(this).jPlayer("setMedia", {
-          m4v: "http://media.happycasts.net/assets/episodes/videos/048-rsync.mov",
-          poster: "http://media.happycasts.net/assets/episodes/stills/load.png"
-        }).jPlayer('play');
-      },
-      swfPath: "/assets/",
-      supplied: "m4v",
-      size: {
-        width: "960px",
-        height: "720px",
-      }
-    });
-  }(window.jQuery)
-  </script>
-<% end %>
