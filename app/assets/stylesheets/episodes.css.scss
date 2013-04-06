@@ -220,9 +220,14 @@ textarea#episode_notes { height: 350px; }
               &:hover {color: $main-color; }
             }
           }
-          div{
+          .divider{
               color: $orange-color;
               &:hover {color: $main-color; }
+              border-top: 1px solid #e6e6e6;
+              padding-top: 7px;
+              margin-bottom: 7px;
+              color: #7c7b7c;
+              font-size: 12px;
           }
       }
     }

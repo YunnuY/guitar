@@ -8,7 +8,7 @@
             <ul>
               <li><%= link_to episode.name, episode %></li>
               <% episode.comments.each do |c| %>
-                <div><%= "#{c.name}: #{c.content}" %></div>
+                <div class="divider"><%= "#{c.name}: #{c.content}" %></div>
               <% end %>
             </ul>
           </div>
