@@ -3,13 +3,15 @@
     <div class="span3">
       <% @episodes.each_with_index do |episode, index| %>
         <% if column == index % 4 %>
-          <%= image_tag("#{episode.img_url}", :alt => "#{episode.name}" ) %>
-          <ul>
-            <li><%= link_to episode.name, episode %></li>
-            <% episode.comments.each do |c| %>
-              <div><%= "#{c.name}: #{c.content}" %></div>
-            <% end %>
-          </ul>
+          <div class="cell">
+            <%= image_tag("#{episode.img_url}", :alt => "#{episode.name}" ) %>
+            <ul>
+              <li><%= link_to episode.name, episode %></li>
+              <% episode.comments.each do |c| %>
+                <div><%= "#{c.name}: #{c.content}" %></div>
+              <% end %>
+            </ul>
+          </div>
         <% end %>
       <% end %>
     </div>

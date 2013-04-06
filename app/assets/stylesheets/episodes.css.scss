@@ -198,27 +198,33 @@ textarea#episode_notes { height: 350px; }
   padding-top: 10px;
 	.span3{
 		width:210px;
-		// height: 800px;
 		list-style-type:none;
-		.img{
-			height: 150px;
-			width: 210px;
-		}
-    ul{
-        padding-left: 0px;
-        li{
-          width: 210px;
-          color: $main-color;
-          list-style: none;
-          a{
-            color: $orange-color;
-            &:hover {color: $main-color; }
+    .cell{
+      width: 200px;
+      list-style: none;
+      margin-bottom: 30px;
+      background: #f5f5f5;
+      padding: 10px;
+      border-bottom: 1px solid #99FF45;
+      img{
+        height: 150px;
+      }
+      ul{
+          padding-left: 0px;
+          li{
+            width: 210px;
+            color: $main-color;
+            list-style: none;
+            a{
+              color: $orange-color;
+              &:hover {color: $main-color; }
+            }
           }
-        }
-        div{
-            color: $orange-color;
-            &:hover {color: $main-color; }
-        }
+          div{
+              color: $orange-color;
+              &:hover {color: $main-color; }
+          }
+      }
     }
 	} 
 }
