@@ -1,5 +1,9 @@
 <div id="episode">
-  <embed src=<%= @episode.play_url %> allowFullScreen="true" quality="high" align="middle" width="90%" height="550"  allowScriptAccess="always" type="application/x-shockwave-flash"></embed>
+  <% if params[:autoplay] %>
+    <%= render "player" %>
+  <% else %>
+    <%= render @episode %>
+  <% end %>
 </div>
 
 <ul class="nav nav-tabs">
