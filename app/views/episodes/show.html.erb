@@ -34,9 +34,9 @@
   </div>
   <% else %>
     <div id="login_buttons">
-      <%= link_to t("login_and_comment"), new_user_session_path(:return_to => request.url) ,:class => "btn btn-danger" %>
+      <%= link_to t("login_and_comment"), new_user_session_path(:return_to => url_for(:only_path => false)) ,:class => "btn btn-danger" %>
       <%= t ("or") %>
-      <%= link_to t("signup_for_free"), new_user_registration_path(:return_to => request.url) ,:class => "btn btn-success" %>
+      <%= link_to t("signup_for_free"), new_user_registration_path(:return_to => url_for(:only_path => false)) ,:class => "btn btn-success" %>
     </div>
     <br \>
   <% end %>
